@@ -1,228 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="css/style_responsivo.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabrizio Alencar | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio de Fabrizio Alencar, desenvolvedor Full Stack especializado em aplicações web, APIs, automação e soluções digitais.">
+  <meta name="author" content="Fabrizio Alencar">
+  <meta name="theme-color" content="#0b0d10">
+  <link rel="canonical" href="https://fabrizioalencardev.github.io/Fabrizio-Alencar/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Fabrizio Alencar | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Aplicações web, APIs e soluções digitais construídas com foco em qualidade, desempenho e experiência.">
+  <meta property="og:url" content="https://fabrizioalencardev.github.io/Fabrizio-Alencar/">
+  <meta property="og:image" content="https://fabrizioalencardev.github.io/Fabrizio-Alencar/img/Me1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="css/style_responsivo.css">
+  <script src="js/main_atualizado.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+  <header class="header">
+    <a href="#home" class="logo" aria-label="Fabrizio Alencar — início">Fabrizio <span>Alencar</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation"><i class="bx bx-menu" aria-hidden="true"></i></button>
+    <nav class="navbar" id="main-navigation" aria-label="Navegação principal">
+      <a href="#home">Início</a><a href="#about">Sobre</a><a href="#services">Serviços</a><a href="#projects">Projetos</a><a href="#contact">Contato</a>
+    </nav>
+    <a class="gradient-btn" href="#contact">Vamos conversar</a>
+  </header>
 
-    <header class="header">
-
-        <a href="#home" class="logo">
-            Fabrizio <span>Alencar</span>
-        </a>
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home">Inicio</a>
-            <a href="#about">Sobre</a>
-            <a href="#services">Serviços</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
-        </nav>
-
-        <button class="gradient-btn">Entre em contato comigo</button>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Olá, meu nome é <span>Fabrizio</span></h1>
-            <h3>
-                Sou um <span>Desenvolvedor Full Stack</span>
-            </h3>
-            <p>Especializado em criar soluções dinâmicas e funcionais. Com experiência tanto em frontend quanto em backend, estou sempre em busca de aprimorar a performance e garantir uma ótima experiência do usuário.</p>
-
-            <div class="social-icons">
-                <a href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-linkedin-square"></i>
-                </a>
-
-                <a href="https://www.instagram.com/fabrizioalencar/" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-instagram-alt"></i>
-                </a>
-            </div>
-
-            <div class="btn-group">
-                <a href="https://wa.me/5594996624957" target="_blank" rel="noopener noreferrer" class="btn">Contratar</a>
-                <a href="#contact" class="btn">Contato</a>
-            </div>
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1 id="hero-title">Fabrizio <span>Alencar</span></h1>
+        <h2>Desenvolvedor Full Stack</h2>
+        <p class="hero-text">Transformo necessidades de negócio em produtos digitais rápidos, acessíveis e fáceis de usar — do frontend à API.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">Conhecer projetos</a>
+          <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Conversar no LinkedIn</a>
         </div>
-
-        <div class="home-img">
-            <img src="img/foto_site.png" alt=""> 
+        <div class="social-icons" aria-label="Redes sociais">
+          <a href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Fabrizio"><i class="bx bxl-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Fabrizio"><i class="bx bxl-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/fabrizioalencar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Fabrizio"><i class="bx bxl-instagram-alt" aria-hidden="true"></i></a>
         </div>
+      </div>
+      <div class="hero-image"><img src="img/Me1.png" width="560" height="560" alt="Retrato de Fabrizio Alencar" fetchpriority="high"></div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/foto_site.png" alt=""> 
-        </div>
-
-        <div class="about-content">
-            <h2>Sobre <span>Mim</span></h2>
-            <p>Olá! Me chamo Fabrizio, um entusiasta de tecnologia e esportes, com 25 anos de idade. Atualmente, graduado em Análise e Desenvolvimento de Sistemas pela ESTÁCIO e especializado no desenvolvimento Full Stack, tanto em backend quanto em frontend.</p><br>
-            <p>Tenho um domínio intermediário e avançando em uma variedade de ferramentas e linguagens como JavaScript, Python, HTML, CSS, GIT, SQL, Power BI, DevOps, Docker, além de diversas soluções da Microsoft como Office 365, Dynamics 365, Power Platform e tecnologias Low-Code. Estou sempre em busca de aprimoramento contínuo e, atualmente, estou me aprofundando em Machine Learning, Sass, Flutter, React e Django.</p><br>
-            <p>Minha paixão é transformar ideias em soluções funcionais e impactantes, buscando sempre a inovação e a eficiência em cada projeto que realizo.</p>
-            <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer" class="btn">Leia Mais</a>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Serviços</h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bx-code"></i>
-                    <h4>API RESTful</h4>
-                    <p>Desenvolvo e integro APIs RESTful para conectar sistemas de forma eficiente e escalável. Meu foco é criar soluções robustas e seguras, garantindo a comunicação perfeita entre diferentes plataformas. Utilizo as melhores práticas de desenvolvimento, como autenticação, controle de versões e documentação clara, para proporcionar APIs que facilitam a integração e o crescimento de negócios.</p>
-                </div>
-            </div>
-
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bx-code"></i>
-                    <h4>Frontend Developer</h4>
-                    <p>Desenvolvo interfaces modernas e responsivas, focadas em oferecer a melhor experiência ao usuário. Com atenção aos detalhes de design e performance, transformo layouts em aplicações web funcionais e dinâmicas, garantindo interatividade e navegação intuitiva em diferentes dispositivos.</p>
-                </div>
-            </div>
-
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bx-code-curly"></i>
-                    <h4>Backend Developer</h4>
-                    <p>Especializado em desenvolvimento backend, foco na criação de sistemas robustos, seguros e escaláveis. Proporciono a lógica de negócio por trás das aplicações, garantindo a integração eficiente com bancos de dados, APIs e outras tecnologias, além de otimizar o desempenho e a segurança das operações.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2 class="heading">Projetos</h2>
-
-        <div class="projects-box">
-
-            <div class="project-card">
-                <img src="img/project1.png" alt="" width="300" height="200"> <!-- Adicione os tamanhos -->
-                <h3>Projeto 1</h3>
-                <p>Uma plataforma inovadora de inteligência artificial que permite a criação de conteúdo visual com templates personalizáveis, potencializando a criatividade com recursos avançados de IA.</p>
-                <div class="btn">Visualizar projeto</div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/project2.png" alt="" width="300" height="200"> <!-- Adicione os tamanhos -->
-                <h3>Projeto 2</h3>
-                <p>Um design moderno para uma loja de óculos online, oferecendo uma experiência imersiva para os usuários escolherem e visualizarem seus acessórios com facilidade.</p>
-                <div class="btn">Visualizar projeto</div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/project3.png" alt="" width="300" height="200"> <!-- Adicione os tamanhos -->
-                <h3>Projeto 3</h3>
-                <p>Um site intuitivo para negociação de criptomoedas, proporcionando uma experiência segura e confiável para traders de todos os níveis, com ferramentas de análise avançada.</p>
-                <div class="btn">Visualizar projeto</div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/project4.png" alt="" width="300" height="200"> <!-- Adicione os tamanhos -->
-                <h3>Projeto 4</h3>
-                <p>Uma plataforma fintech que reúne segurança e inovação para oferecer produtos financeiros e de criptomoeda, desenvolvidos para atender às necessidades de um mercado em crescimento.</p>
-                <div class="btn">Visualizar projeto</div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/project5.png" alt="" width="300" height="200"> <!-- Adicione os tamanhos -->
-                <h3>Projeto 5</h3>
-                <p>Um serviço de marketing automatizado que simplifica o gerenciamento de campanhas, oferecendo ferramentas para otimizar o alcance e o engajamento de maneira eficiente.</p>
-                <div class="btn">Visualizar projeto</div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/project6.png" alt="" width="300" height="200"> <!-- Adicione os tamanhos -->
-                <h3>Projeto 6</h3>
-                <p>Um projeto criativo de design gráfico, focado em comunicação visual e arte contemporânea, explorando formas inovadoras de expressão visual em mídia digital.</p>
-                <div class="btn">Visualizar projeto</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Entre em contato <span>comigo</span></h2>
-
-        <form action="#">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Nome completo">
-                    <input type="email" placeholder="Email">
-                </div>
-
-                <div class="input-box">
-                    <input type="number" placeholder="Telefone">
-                    <input type="text" placeholder="Assunto">
-                </div>
-            </div>
-            <div class="input-group-2">
-                <textarea name="" id="" placeholder="Sua mensagem" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar mensagem" class="btn">
-            </div>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-linkedin-square"></i>
-            </a>
-
-            <a href="https://www.instagram.com/fabrizioalencar/" target="_blank" rel="noopener noreferrer">
-                <i class="bx bxl-instagram-alt"></i>
-            </a>
-        </div>
-
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-
-            <li>
-                <a href="#services">Serviços</a>
-            </li>
-
-            <li>
-                <a href="#about">Sobre mim</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projetos</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contato</a>
-            </li>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-image"><img src="img/Me.png" width="560" height="560" alt="Fabrizio Alencar, desenvolvedor Full Stack" loading="lazy"></div>
+      <div class="about-content">
+        <p class="eyebrow">Sobre mim</p>
+        <h2 id="about-title">Tecnologia com <span>propósito</span></h2>
+        <p>Sou graduado em Análise e Desenvolvimento de Sistemas pela Estácio e atuo na construção de soluções completas, conectando interfaces intuitivas, regras de negócio e dados.</p>
+        <p>Trabalho com JavaScript, Python, HTML, CSS, Git, SQL, Power BI, Docker, DevOps e o ecossistema Microsoft. Continuo evoluindo em React, Django, Flutter, Sass e Machine Learning.</p>
+        <ul class="highlights">
+          <li><i class="bx bx-check" aria-hidden="true"></i> Desenvolvimento orientado a problemas reais</li>
+          <li><i class="bx bx-check" aria-hidden="true"></i> Código legível, responsivo e sustentável</li>
+          <li><i class="bx bx-check" aria-hidden="true"></i> Comunicação clara durante todo o projeto</li>
         </ul>
+        <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer" class="text-link">Conheça minha trajetória no LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
-        <p class="copyright">
-            &copy; 2024 Fabrizio Alencar. Todos os direitos reservados. Criado e projetado por <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/">Fabrizio</a>
-        </p>
-    </footer>
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="section-heading"><p class="eyebrow">Como posso ajudar</p><h2 id="services-title">Serviços</h2></div>
+      <div class="services-grid">
+        <article class="service-card"><i class="bx bx-code-alt" aria-hidden="true"></i><h3>Aplicações web</h3><p>Interfaces modernas, responsivas e acessíveis, construídas para oferecer uma experiência consistente em qualquer dispositivo.</p></article>
+        <article class="service-card"><i class="bx bx-server" aria-hidden="true"></i><h3>Backend e APIs</h3><p>APIs REST, regras de negócio, integrações e bancos de dados com foco em segurança, clareza e evolução sustentável.</p></article>
+        <article class="service-card"><i class="bx bx-line-chart" aria-hidden="true"></i><h3>Dados e automação</h3><p>Dashboards, automações e integrações que reduzem trabalho manual e transformam dados em decisões práticas.</p></article>
+      </div>
+    </section>
 
-    <script src="js/main_atualizado.js"></script>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><p class="eyebrow">Código em prática</p><h2 id="projects-title">Projetos selecionados</h2><p>Uma seleção de projetos públicos disponíveis para consulta no GitHub.</p></div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="img/project1.png" width="600" height="400" alt="Prévia do sistema de controle de estoque" loading="lazy">
+          <div class="project-content"><p class="project-type">Aplicação • Full Stack</p><h3>Controle de Estoque</h3><p>Sistema voltado ao gerenciamento de produtos e operações de estoque, organizado como uma aplicação completa.</p><div class="tags"><span>Python</span><span>Web</span><span>Dados</span></div><a class="project-link" href="https://github.com/FabrizioAlencarDev/ControleEstoque" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <img src="img/project2.png" width="600" height="400" alt="Prévia de um tradutor multilíngue" loading="lazy">
+          <div class="project-content"><p class="project-type">Integração • API</p><h3>Tradutor Multilíngue</h3><p>Aplicação em Python que utiliza uma API de tradução para processar textos em diferentes idiomas.</p><div class="tags"><span>Python</span><span>API</span><span>Integração</span></div><a class="project-link" href="https://github.com/FabrizioAlencarDev/Translate-API" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <img src="img/project3.png" width="600" height="400" alt="Prévia de uma aplicação de cotação do dólar" loading="lazy">
+          <div class="project-content"><p class="project-type">Dados • API</p><h3>Cotação do Dólar</h3><p>Projeto de consulta de cotação que demonstra consumo de dados externos e apresentação objetiva da informação.</p><div class="tags"><span>API</span><span>Dados</span><span>Automação</span></div><a class="project-link" href="https://github.com/FabrizioAlencarDev/API-D-lar-Cota-o" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <img src="img/project4.png" width="600" height="400" alt="Prévia de uma aplicação acadêmica" loading="lazy">
+          <div class="project-content"><p class="project-type">Aplicação • JavaScript</p><h3>App Faculdade</h3><p>Aplicação acadêmica criada para exercitar organização de interface, interações e fundamentos de desenvolvimento web.</p><div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div><a class="project-link" href="https://github.com/FabrizioAlencarDev/App-faculdade" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <a class="btn projects-cta" href="https://github.com/FabrizioAlencarDev?tab=repositories" target="_blank" rel="noopener noreferrer">Explorar todos os repositórios</a>
+    </section>
 
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow">Vamos construir algo?</p>
+        <h2 id="contact-title">Conte-me sobre seu <span>próximo projeto</span></h2>
+        <p>Estou disponível para oportunidades, colaborações e projetos. Escolha seu canal preferido e fale comigo diretamente.</p>
+      </div>
+      <div class="contact-form" aria-label="Canais de contato">
+        <div class="field field-full"><a class="btn" href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin-square" aria-hidden="true"></i> Enviar mensagem no LinkedIn</a></div>
+        <div class="field field-full"><a class="btn btn-secondary" href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github" aria-hidden="true"></i> Conhecer meu GitHub</a></div>
+        <div class="field field-full"><a class="btn btn-secondary" href="https://www.instagram.com/fabrizioalencar/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram-alt" aria-hidden="true"></i> Conversar no Instagram</a></div>
+        <p class="form-note field-full">Os links abrem diretamente os meus perfis oficiais.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">Fabrizio <span>Alencar</span></a>
+    <p>Desenvolvimento Full Stack com propósito, clareza e atenção aos detalhes.</p>
+    <div class="social-icons" aria-label="Redes sociais">
+      <a href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Fabrizio"><i class="bx bxl-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Fabrizio"><i class="bx bxl-linkedin-square" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/fabrizioalencar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Fabrizio"><i class="bx bxl-instagram-alt" aria-hidden="true"></i></a>
+    </div>
+    <p class="copyright">&copy; <span id="current-year"></span> Fabrizio Alencar. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
