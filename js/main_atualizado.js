@@ -3,6 +3,8 @@ const menuIcon = menuButton?.querySelector("i");
 const navigation = document.querySelector("#main-navigation");
 const navigationLinks = document.querySelectorAll(".navbar a");
 const year = document.querySelector("#current-year");
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector("#form-status");
 
 function closeMenu() {
   if (!menuButton || !navigation) return;
@@ -49,3 +51,26 @@ if ("IntersectionObserver" in window) {
 }
 
 if (year) year.textContent = new Date().getFullYear();
+
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!contactForm.reportValidity()) return;
+
+  const data = new FormData(contactForm);
+  const lines = [
+    "Olá, Fabrizio! Vim pelo seu portfólio.",
+    "",
+    `Nome: ${data.get("name")}`,
+    `E-mail: ${data.get("email")}`,
+    data.get("phone") ? `Telefone: ${data.get("phone")}` : "",
+    `Assunto: ${data.get("subject")}`,
+    "",
+    `Mensagem: ${data.get("message")}`
+  ].filter(Boolean);
+
+  const whatsappUrl = `https://wa.me/5594996624957?text=${encodeURIComponent(lines.join("\n"))}`;
+  if (formStatus) formStatus.textContent = "Abrindo o WhatsApp com sua mensagem...";
+  const whatsappWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  if (whatsappWindow) whatsappWindow.opener = null;
+});
