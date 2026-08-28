@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fabrizioalencardev.github.io/Fabrizio-Alencar/sitemap.xml
