@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
   <link rel="stylesheet" href="css/style_responsivo.css?v=20260828-1">
-  <script src="js/main_atualizado.js?v=20260828-1" defer></script>
+  <script src="js/main_atualizado.js?v=20260828-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
@@ -40,7 +40,7 @@
         <p class="hero-text">Transformo necessidades de negócio em produtos digitais rápidos, acessíveis e fáceis de usar — do frontend à API.</p>
         <div class="hero-actions">
           <a href="#projects" class="btn">Conhecer projetos</a>
-          <a href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Conversar no LinkedIn</a>
+          <a href="https://wa.me/5594996624957?text=Olá%20Fabrizio!%20Conheci%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Conversar no WhatsApp</a>
         </div>
         <div class="social-icons" aria-label="Redes sociais">
           <a href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Fabrizio"><i class="bx bxl-github" aria-hidden="true"></i></a>
@@ -103,14 +103,35 @@
       <div class="contact-copy">
         <p class="eyebrow">Vamos construir algo?</p>
         <h2 id="contact-title">Conte-me sobre seu <span>próximo projeto</span></h2>
-        <p>Estou disponível para oportunidades, colaborações e projetos. Escolha seu canal preferido e fale comigo diretamente.</p>
+        <p>Preencha os dados ao lado. Ao enviar, sua mensagem será preparada e aberta diretamente no WhatsApp.</p>
+        <a class="contact-direct" href="https://wa.me/5594996624957?text=Olá%20Fabrizio!%20Conheci%20seu%20portfólio." target="_blank" rel="noopener noreferrer">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Conversar diretamente no WhatsApp
+        </a>
       </div>
-      <div class="contact-form" aria-label="Canais de contato">
-        <div class="field field-full"><a class="btn" href="https://www.linkedin.com/in/fabrizio-alencar-dev/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin-square" aria-hidden="true"></i> Enviar mensagem no LinkedIn</a></div>
-        <div class="field field-full"><a class="btn btn-secondary" href="https://github.com/FabrizioAlencarDev" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github" aria-hidden="true"></i> Conhecer meu GitHub</a></div>
-        <div class="field field-full"><a class="btn btn-secondary" href="https://www.instagram.com/fabrizioalencar/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram-alt" aria-hidden="true"></i> Conversar no Instagram</a></div>
-        <p class="form-note field-full">Os links abrem diretamente os meus perfis oficiais.</p>
-      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="field">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Telefone <span class="optional">(opcional)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+        </div>
+        <div class="field">
+          <label for="subject">Assunto</label>
+          <input id="subject" name="subject" type="text" required>
+        </div>
+        <div class="field field-full">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn field-full"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Enviar pelo WhatsApp</button>
+        <p id="form-status" class="form-note field-full" aria-live="polite">O site não armazena os dados preenchidos.</p>
+      </form>
     </section>
   </main>
 
